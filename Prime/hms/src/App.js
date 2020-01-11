@@ -1,33 +1,29 @@
 import React, { Component } from 'react';
-//import {BrowserRouter, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-
 import Login from "./Components/Auth/Login";
 import Dashboard from "./Components/Auth/Dashboard";
-
-// export default class App extends Component{
-//   render(){
-//     return(
-//       <div className ="app">
-//         <BrowserRouter>
-//         <Switch>
-//           <Route exact path={"/"} Component={Login}/>
-//           <Route exact path ={"/dashboard"} Component={Dashboard}/>
-//         </Switch>
-//         </BrowserRouter>
-//       </div>
-//     );
-//   }
-// }
+import SignUp from "./Components/Auth/SignUp";
+import ForgotPassword from "./Components/Auth/ForgotPassword";
+import Reset from "./Components/Auth/Reset";
+import Thanks from "./Components/Auth/Thankyou";
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Login />
+      <Router>
+      <div className="App">      
+            <Route exact path="/SignUp" component={SignUp}/>
+            <Route exact path="/" component={Login}/>
+            <Route exact path="/Login" component={Login}/>
+            <Route exact path="/Reset" component={Reset}/>
+            <Route exact path="/Thanks" component={Thanks}/>
+            <Route exact path="/ForgotPassword" component={ForgotPassword}/>
+            <Route exact path ="/Dashboard" component={Dashboard}/>
       </div>
+      </Router>
     )
   }
 }
