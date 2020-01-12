@@ -12,6 +12,7 @@ body {
   max-width: 600px;
   height: 320px;
   border: 1px solid #9C9C9C;
+  border-radius: inherit;
   background-color: #EAEAEA;
 }
 #login .container #login-row #login-column #login-box #login-form {
@@ -19,4 +20,24 @@ body {
 }
 #login .container #login-row #login-column #login-box #login-form #register-link {
   margin-top: -85px;
+}
+
+.back{
+  background-color: #5DBCD2;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  top: 70px;
+
+}
+
+.button{
+  padding-bottom: 10px;
+}
+
+.link-text{
+  text-decoration: none;
+}
+
+.text-color{
+  color: white;
 }
