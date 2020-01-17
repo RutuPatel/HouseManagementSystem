@@ -20,7 +20,11 @@ class Login extends Component{
         // <h3 class="text-center text-white pt-5"> Login </h3>
         <div class="auth">
           <div class="container">
-          <h3>Housify</h3>
+            
+            <div id = "header">
+            <h1>Housify</h1>
+            </div>
+
               <div id="auth-row" class="row justify-content-center align-items-center">
                   <div id="auth-column" class="col-md-5">
                       <div id="auth-box" class="col-md-11">                      

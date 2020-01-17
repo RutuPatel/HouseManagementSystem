@@ -9,8 +9,16 @@ body {
   height: 100vh;
 }
 
+.auth .container #header{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-top: 70px;
+  
+}
+
 .auth .container #auth-row #auth-column #auth-box {
-  margin-top: 120px;
+  margin-top: 100px;
   min-height: 300px;
   min-width: 250px;
   border: 1px solid #9C9C9C;
