@@ -12,28 +12,38 @@ class ForgotPassword extends Component {
     render() { 
         return ( 
                
-        <div className="Forgot Password">        
-        <form>
-          <FormGroup>
-            <h1> Forgot Passowrd </h1>
-          </FormGroup>
-        <FormGroup bsSize="large">
-            <FormControl
-              autoFocus
-              type="Email"
-              placeholder ="Enter Your registered Email address"
-              //text ="Email"
-              //value={email}
-              //onChange={e=> setEmail(e.target.value)}
-              />
-        </FormGroup>
+          <div class="auth">
+          <div class="container">
 
+              <div id="auth-row" class="row justify-content-center align-items-center">
+                  <div id="auth-column" class="col-md-5">
+                      <div id="auth-box" class="col-md-11">                      
+                        <form class="forgotform">
+                          
+                          <h3 class="text-center text-info">Forgot Password</h3>
 
-        <Button  type="submit" name="ForgotPassword">
-            send Reset Link
-        </Button>       
-        </form>
-      </div>
+                          <div class="form-group">
+                            <FormGroup bsSize="large" class="row justify-content-center align-items-center text-info from-control">
+                                <FormControl
+                                  autoFocus
+                                  type="Email"
+                                  placeholder ="Email"
+                                  //text ="Email"
+                                  //value={email}
+                                  //onChange={e=> setEmail(e.target.value)}
+                                  />
+                            </FormGroup>
+                          </div>
+                        
+                        <Button class="btn btn-info btn-md"  type="submit" name="continue">
+                          Continue
+                        </Button>          
+                        </form>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
          );
     }
 }
