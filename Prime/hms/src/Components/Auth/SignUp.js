@@ -11,63 +11,80 @@ class SignUp extends Component {
     }
     render() { 
         return (
-            
-        <div className="SignUp">       
-        <form>
-          <FormGroup>
-            <h1> SignUp </h1>
-          </FormGroup>
-          <FormGroup bsSize="large">
-            <FormControl
-              autoFocus
-              type="text"
-              placeholder ="First Name"
-              //text ="Email"
-              //value={email}
-              //onChange={e=> setEmail(e.target.value)}
-              />
-        </FormGroup>
-        <FormGroup bsSize="large">
-            <FormControl
-              autoFocus
-              type="Text"
-              placeholder ="Last Name"
-              //text ="Email"
-              //value={email}
-              //onChange={e=> setEmail(e.target.value)}
-              />
-        </FormGroup>
+          <div class="auth">
+          <div class="container">
+          <h3>Housify</h3>
+              <div id="auth-row" class="row justify-content-center align-items-center">
+                  <div id="auth-column" class="col-md-5">
+                      <div id="auth-box" class="col-md-11">
+                        <form class="form">
+                          
+                          <h3 class="text-center text-info">Signup</h3>
 
-        <FormGroup bsSize="large">
-            <FormControl
-              autoFocus
-              type="Email"
-              placeholder ="Email"
-              //text ="Email"
-              //value={email}
-              //onChange={e=> setEmail(e.target.value)}
-              />
-        </FormGroup>
+                          <div class="form-group">
+                            <FormGroup bsSize="large" class="row justify-content-center align-items-center text-info from-control">
+                                <FormControl
+                                  autoFocus
+                                  type="text"
+                                  placeholder ="First Name"
+                                  //text ="Email"
+                                  //value={email}
+                                  //onChange={e=> setEmail(e.target.value)}
+                                  />
+                            </FormGroup>
+                          </div>
 
-        <FormGroup bsSize="large">
-            <FormControl
-              type="password"
-              placeholder ="Password"
-             // value={password}
-              //onChange={e=> setPassword(e.target.value)}
-              />
-        </FormGroup>
+                          <div class="form-group">
+                            <FormGroup bsSize="large" class="row justify-content-center align-items-center text-info from-control">
+                                <FormControl
+                                  type="text"
+                                  placeholder ="Last Name"
+                                // value={password}
+                                  //onChange={e=> setPassword(e.target.value)}
+                                  />
+                            </FormGroup>
+                            </div>
 
-        <Button  type="submit" name="Register">
-            Register
-        </Button>
-        <Link to="/Login"> 
-         <h6>Aready Registered?Login</h6>
-            
-        </Link>
-       
-        </form>
-      </div>
+                            <div class="form-group">
+                            <FormGroup bsSize="large" class="row justify-content-center align-items-center text-info from-control">
+                                <FormControl
+                                  type="email"
+                                  placeholder ="Email"
+                                // value={password}
+                                  //onChange={e=> setPassword(e.target.value)}
+                                  />
+                            </FormGroup>
+                            </div>
+                        
+                          <div class="form-group">
+                            <FormGroup bsSize="large" class="row justify-content-center align-items-center text-info from-control">
+                                <FormControl
+                                  type="password"
+                                  placeholder ="Password"
+                                // value={password}
+                                  //onChange={e=> setPassword(e.target.value)}
+                                  />
+                            </FormGroup>
+                            </div>
+
+                        <Button class="btn btn-info btn-md"  type="submit" name="Login">
+                          Signup
+                        </Button>        
+                        <br />
+                          <div class="links">
+                            <Link to="/Login" className="fc">
+                              <h6 class="text-info">Already a User? Login </h6>         
+                            </Link>
+                            <Link to="/ForgotPassword">          
+                              <h6 class="text-info">Forgot you password?</h6>         
+                            </Link>     
+                          </div>  
+                        </form>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
           );
     }
 }
